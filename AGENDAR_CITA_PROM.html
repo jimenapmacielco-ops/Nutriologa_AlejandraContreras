@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Consultorio - Licenciada Alejandra Contreras</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css"> 
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="fondo">
+     <!--Menú de navegación-->
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(249, 247, 240, 0.97);">
+        <div class="container-fluid">
+            <a class="navbar-brand texto-verde" href="index.html">
+                <img src="IMG/LOGO.png" alt="Bootstrap" width="100" height="100">
+            </a> 
+            <span class="navbar-brand texto-verde">Licenciada Alejandra Contreras </span>
+               
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-brand collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ACERCA_DE_MI.html">Acerca de mi</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mi Consultorio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="AGENDAR_CITA_PROM.html">Programas</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="AGENDAR_CITA_UB.html">Ubicación</a></li>    
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="VISIÓN.html">Visión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CONTACTAME.html">Contáctame</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex align-items-center">
+                    <a href="https://www.facebook.com/alejandraC080923" class="mx-2 fs-4" style="color: #f09c3c;">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/523328029842?text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20agendar%20cita." class="mx-2 fs-4" style="color: #f09c3c;">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn boton-verde ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        UBICACIÓN
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header position-relative">
+        <h1 class="modal-title fs-5 w-100 text-center" id="exampleModalLabel" style="color: #2b3b12;">¿Como llegar?</h1>
+        <button type="button" class="btn-close position-absolute end-0 top-0 me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6901.862891137843!2d-103.71824530224764!3d21.018957325069433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842624a5ba420299%3A0x6c38166276261cf0!2sCalle%20Ignacio%20Aldama%2010%2C%2046408%20El%20Salvador%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1777913059832!5m2!1ses-419!2smx" width="465" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" style="background-color: #728c29; border-color: #728c29;" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---Cuerpo de la página-->
+
+<div class="container mt-5 rounded-4 shadow-sm" style="background-color: rgba(249, 247, 240, .97);">
+    <br>
+    <h1 class="titulo-fondo-naranja rounded-4 text-center mb-4" style="color: #db6609; font-weight: bold;">Programas</h1> 
+    <br>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+       
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="IMG/b-y-g-SaN6XB1DrJk-unsplash (1).jpg" class="card-img-top" alt="Consulta individual" style="height: 220px; object-fit: cover;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Consulta nutricional individual</h5>
+                    <h6 class="card-subtitle mb-3 text-muted">Precio: $500 MXN | (Modalidad local)</h6>
+                    <p class="card-text text-muted mb-4" style="text-align: justify;">
+                        <strong>Incluye:</strong><br>
+                        • Evaluación nutricional completa <br>
+                        • Plan de alimentación personalizado <br>
+                        • Revisión de estudios de laboratorio <br>
+                        • Antropometría (peso, talla, circunferencias)
+                    </p>
+                    <h6 class="mt-auto text-muted fst-italic small">Frecuencia sugerida: Quincenal (adaptable)</h6>  
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="IMG/Image_aat55haat55haat5.png" class="card-img-top" alt="Programa Individual Nutrición" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Programa Individual – Nutrición</h5>
+                    <h6 class="card-subtitle mb-3 text-muted">Precio: $650 MXN | (Modalidad presencial o en línea)</h6>
+                    <p class="card-text text-muted" style="text-align: justify;">
+                        <strong>Incluye:</strong><br>
+                        • Evaluación nutricional completa <br>
+                        • Plan de alimentación personalizado<br>
+                        • Seguimiento y acompañamiento continuo<br>
+                        • Resolución de dudas<br>
+                        • Estrategias para mejorar hábitos y relación con la comida
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="IMG/feliz-joven-fitness-mostrando-musculos-biceps-mientras-cocina-interior_116547-75883.avif" class="card-img-top" alt="Programa Integral" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Programa Individual Integral – Nutrición + Entrenamiento</h5>
+                    <h6 class="card-subtitle mb-3 text-muted">Precio: $650 – $750 MXN</h6>
+                    <p class="card-text text-muted" style="text-align: justify;">
+                        <strong>Incluye:</strong><br>
+                        • Programa de nutrición completo <br>
+                        • Rutina de entrenamiento personalizada <br>
+                        • Sesión con entrenador (videollamada o llamada) <br>
+                        • Coordinación nutrición + entrenamiento <br>
+                        • Ajustes básicos según progreso
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="IMG/Gemini_Generated_Image_2y7dk2y7dk2y7dk2.png" class="card-img-top" alt="Programa Pareja" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Programa Pareja – Nutrición</h5>
+                    <h6 class="card-subtitle mb-3 text-muted">Precio: $700 – $750 MXN</h6>
+                    <p class="card-text text-muted" style="text-align: justify;">
+                        <strong>Incluye:</strong><br>
+                        • Plan de alimentación personalizado para 2 personas <br>
+                        • Estrategias adaptadas a su dinámica diaria <br>
+                        • Ajustes durante el proceso <br>
+                        • Educación en hábitos en conjunto
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="IMG/brocnbells-com-team-o_AKuNfcFyM-unsplash.jpg" class="card-img-top" alt="Programa Pareja Integral" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Programa Pareja Integral – Nutrición + Entrenamiento</h5>
+                    <h6 class="card-subtitle mb-3 text-muted">Precio: $900 – $1,000 MXN</h6>
+                    <p class="card-text text-muted" style="text-align: justify;">
+                        <strong>Incluye:</strong><br>
+                        • Plan de alimentación para 2 personas <br>
+                        • Sesión con entrenador para ambos <br>
+                        • Coordinación conjunta <br>
+                        • Ajustes básicos según progreso
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="IMG/volant-yPyS85-J3LY-unsplash.jpg" class="card-img-top" alt="Programa Familiar" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Programa Familiar (3 a 4 integrantes)</h5>
+                    <h6 class="card-subtitle mb-3 text-muted">Precio: $1,000 – $1,200 MXN</h6>
+                    <p class="card-text text-muted" style="text-align: justify;">
+                        <strong>Incluye:</strong><br>
+                        • Plan de alimentación para toda la familia <br>
+                        • Organización de comidas en casa <br>
+                        • Estrategias para mejorar hábitos familiares <br>
+                        • Adaptaciones según necesidades de cada integrante
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+</div>
+<!---Fin del cuerpo de la página-->
+
+<!---Whatsapp flotante-->
+<a href="https://wa.me/523328029842?text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20agendar%20cita." target="_blank">
+    <div style="position: fixed; bottom: 20px; left: 20px; background-color:#25D366; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); cursor: pointer; z-index: 1000;"> 
+        <i class="fab fa-whatsapp" style="color:white; font-size: 30px;"></i>
+    </div>
+</a>
+
+<!-- FOOTER -->
+<footer class="text-white pt-4 pb-3 mt-5" style="background-color: #728c29;">
+  <div class="container text-center">
+    <div class="mb-3">
+      <a href="https://www.facebook.com/alejandraC080923" class="text-white mx-3 fs-4">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/nut.alejandracont?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-white mx-3 fs-4">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://wa.me/523328029842?text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20agendar%20cita." class="text-white mx-3 fs-4">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alejandra.contreras.cas.07@gmail.com&su=Agendar_Cita&body=Hola,%20me%20gustaría%20agendar%20una%20cita." class="text-white mx-3 fs-4" target="_blank">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <p class="mb-0 small">
+      © 2026 Nutrióloga Alejandra Contreras | Todos los derechos reservados
+    </p>
+  </div>
+</footer>
+<script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
